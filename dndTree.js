@@ -1,6 +1,6 @@
 // Get JSON data
-treeJSON = d3.json("graph.json", function(error, treeData) {
-
+//treeJSON = d3.json("graph.json", function(error, treeData) {
+treeJSON = d3.json("https://raw.githubusercontent.com/nardaj/cybersecurity-threat-map-collapsing-tree/master/graph.json", function(error, treeData) {
     // Calculate total nodes, max label length
     var totalNodes = 0;
     var maxLabelLength = 0;
