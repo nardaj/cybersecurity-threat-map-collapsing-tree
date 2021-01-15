@@ -1,0 +1,241 @@
+{
+  "name": "Security Threat Landscape",
+  "children": [
+	{
+		"name": "Device/IoT-Centric Security", "description": "Internet of Things (IoT) can be defined as the networked interconnection of everyday objects, equipped with ubiquitous intelligence.",
+		"children": [
+				{
+				"name": "TG1.1 Unintentional damage/loss of information or IT assets", "description": "This group includes all threats causing unintentional damage including safety and information leakage or sharing due to human errors.",
+				"children": [
+					{"name": "T1.1.1 Information leakage/sharing due to human errors", "description": "Related to poor/absent patch management, the adoption of weak passwords and wrong authorization configurations."},
+					{"name": "T1.1.2 Inadequate design and planning or incorrect adaptation", "description": "Vulnerability to different attacks ranging from buffer overflow to lack of authentication."}
+				]},
+				{
+				"name": "TG1.2 Interception and unauthorised acquisition", "description": "This group includes threats introduced by alteration/manipulation of the communications between two parties. ",
+				"children": [
+					{"name": "T1.2.1 Interception of information", "description": "It considers an attacker intercepting communication between two communicating links."},
+					{"name": "T1.2.2 Unauthorized acquisition of information", "description": "IoT can be subject to disclosure of sensitive data, intentionally or unintentionally, to unauthorized parties."}
+				]},
+				{
+				"name": "TG1.3 Intentional physical damage", "description": " In IoT, the physical access to the devices that are spread in a potential uncontrolled environment is more serious than in another domain.",
+				"children": [
+					{"name": "T1.3.1 Device modification", "description": "Devices might be subject to software reverse-engineering, cloning, device replication, camouflage, and malicious device/node injection"},
+					{"name": "T1.3.2 Extraction of private information", "description": "IoT devices are often physically unprotected, allowing for private information extraction."}
+				]},
+				{
+				"name": "TG1.4 Nefarious activity/abuse", "description": "It requires active attacks targeting the infrastructure of the victim, including the installation or use of malicious tools and software.",
+				"children": [
+					{"name": "T1.4.1 Identity fraud", "description": "Identity fraud in IoT primarily refers to both weak user/admin credentials and authentication and identity spoofing."},
+					{"name": "T1.4.2 Denial of service", "description": "It can exhaust device's resources, causing performance decrease, loss of data, service outages, as well as safety issues."},
+					{"name": "T1.4.3 Malicious code/software/activity", "description": "These threats involve malware, exploit kits, worms, trojans, and exploit backdoors and trapdoors and developer errors."},
+					{"name": "T1.4.4 Misuse of assurance tools", "description": "The manipulation of assurance tools can result in scenarios where the malicious behavior of attackers is masqueraded."},
+					{"name": "T1.4.5 Failures of the business process", "description": "Improper business processes can damage or cause a loss of assets(confidentiality and integrity of sensor data threats)."},
+					{"name": "T1.4.6 Code execution and injection (unsecured APIs)", "description": "Code execution and injection are critical classes of attacks that can increase risks."}
+				]},
+				{
+				"name": "TG1.5 Legal", "description": "This group provides for threats resulting from violations of laws and/or regulations, such as the inappropriate use of Intellectual Property Rights and the misuse of personal data.", 
+				"children": [
+					{"name": "T1.5.1 Violation of laws or regulations", "description": "Examples include violations of laws, legislation breach, the failure to meet contractual requirements, personal data abuse, etc."}
+				]},
+				{
+				"name": "TG1.6 Organisational threats", "description": "This group includes threats to the organizational sphere.",
+				"children": [
+					{"name": "T1.6.1 Skill shortage", "description": "A possible shortage of skilled IoT cybersecurity experts is one of the main threats to IoT."}
+				]}]
+	},
+	{
+		"name": "Network-Centric Security", "description": "Traditional network environments are characterized by well-defined perimeters and trusted domains.",
+		"children": [
+				{
+				"name": "TG2.1 Unintentional damage/loss of information or IT assets", "description": "This group includes all threats causing unintentional information leakage or sharing due to human errors.",
+				"children": [
+					{"name": "T2.1.1 Erroneous use or administration of devices and systems", "description": "Attacks or human-errors are exploited to gain unauthorized privileged access to a system, and can be used as a part of the attack."}
+				]},
+				{
+				"name": "TG2.2 Interception and unauthorised acquisition", "description": "This group includes any attack, passive or active, where the attacker attempts to listen, intercept, or re-route traffic/data. ",
+				"children": [
+					{"name": "T2.2.1 Signaling traffic interception", "description": "Most of the signaling protocols are dated and implemented in an insecure way, thus lacking secuity features."},
+					{"name": "T2.2.2 Data session hijacking", "description": "Session hijacking is an attack that is used for gaining unauthorized access between an authorized session connection."},
+					{"name": "T2.2.3 Traffic eavesdropping", "description": "It is possible if the traffic is not protected, e.g. user-plane traffic is not encrypted at the radio access level."},
+					{"name": "T2.2.4 Traffic redirection", "description": "Redirection of data can be possible by data manipulation when data is not integrity protected."}
+				]},
+				{
+				"name": "TG2.3 Nefarious activity/abuse", "description": "It requires active attacks targeting the network infrastructure of the victim.",
+				"children": [
+					{"name": "T2.3.1 The exploitation of software bug", "description": "Through software bugs, it is possible to attack the vulnerable device, for instance, DoS, frauds, etc."},
+					{"name": "T2.3.2 Manipulation of hardware and firmware", "description": "Once a system is compromised, malware could find vulnerabilities in the firmware allowing for malicious code insertion."},
+					{"name": "T2.3.3 Malicious code/software/activity", "description": "One of the main threats against network infrastructures, which will be even more dangerous with emerging networks softwarization."},
+					{"name": "T2.3.4 Remote activities (execution)", "description": "In general refers to the process by which an agent can exploit a network vulnerability to run."},
+					{"name": "T2.3.5 Malicious code - Signaling amplification attacks", "description": "The amplification effect lies in the fact that DNS response messages may be substantially larger than DNS query messages."}
+				]},
+				{
+				"name": "TG2.4 Organisational threats", "description": "This group includes threats to the organizational sphere.",
+				"children": [
+					{"name": "T2.4.1 Failures of devices or systems", "description": "System failures include the incidents caused by failures of a system, e.g. hardware and software failures."},
+					{"name": "T2.4.2 Supply chain", "description": "A supply chain threat refers to the compromise of an asset with the aim to indirectly damage a certain target."},
+					{"name": "T2.4.3 Software bug", "description": "A security bug is a software bug that can be exploited to gain unauthorized access or privileges on a computer system."}
+				]}]
+	},
+	{
+		"name": "System-Centric Security", "description": "The system is widely used as a synonym of Operating System (OS), or in general, software that enables applications to take advantage of the computation connectivity and storage capabilities of the hardware.",
+		"children": [
+				{
+				"name": "TG3.1 Unintentional damage/loss of information or IT assets", "description": "This group includes all threats causing unintentional security leakage due to human errors.",
+				"children": [
+					{"name": "T3.1.1 Information leakage/sharing due to human errors", "description": "Accidental threats caused due to misconfiguration, clerical errors, misapplication of valid rules, and knowledge-based mistakes."},
+					{"name": "T3.1.2 Inadequate design and planning or incorrect adaptation", "description": "This threat and its adaptation of a modern cloud-based system can result in threats to managed data."}
+				]},
+				{
+				"name": "TG3.2 Interception and unauthorised acquisition", "description": "This group includes threats introduced by alteration/manipulation of the communications between two parties (including cloud internal communication channels). ",
+				"children": [
+					{"name": "T3.2.1 Interception of information", "description": "It considers an attacker intercepting communication between two communicating links."},
+					{"name": "T3.2.2 Unauthorized acquisition of information", "description": "The physical sharing of virtualization or the logical sharing of the cloud enhances the severity of accessing unauthorized data."}
+				]},
+				{
+				"name": "TG3.3 Poisoning", "description": "This group includes all the threats due to configuration/business process poisoning and aiming to alter system behaviors (i.e., at any layers).",
+				"children": [
+					{"name": "T3.3.1 Configuration poisoning", "description": "It is very difficult to detect and shares a similar impact as unintentional misconfiguration. In most of the cases, it implies a malicious insider."},
+					{"name": "TG3.3.2 Business process poisoning", "description": "It refers to business process compromise (BPC), an attack that generates significant monetary profit for the attackers by altering business processes."}
+				]},
+				{				
+				"name": "TG3.4 Nefarious activity/abuse", "description": "It requires active attacks targeting the infrastructure at any layers like management hijacking and identity fraud.",
+				"children": [
+					{"name": "T3.4.1 Identity fraud", "description": "In modern systems, identity handling is more difficult due to the more complex and stratified hierarchical administration of privileges."},
+					{"name": "T3.4.2 Denial of service", "description": "It can exhaust system's resources, causing performance decrease, loss of data, service outages, and data availability issues."},
+					{"name": "T3.4.3 Malicious code/software/activity", "description": "These threats involve malware, exploit kits, worms, trojans, and exploit backdoors and trapdoors and developer errors."},
+					{"name": "T3.4.4 Generation and use of rogue certificatesy", "description": "Certificates are largely used in the cloud to make the service working in a trustful ecosystem."},
+					{"name": "T3.4.5 Misuse of assurance tools", "description": "The manipulation of assurance tools can result in scenarios where the malicious behavior of attackers is masqueraded."},
+					{"name": "T3.4.6 Failures of the business process", "description": "It is connected with a lack of security governance/awareness and with the need of having users’ behavioral analysis."},
+					{"name": "T3.4.7 Code execution and injection (unsecured APIs)", "description": "It is possible to execute code on hypervisor from a malicious VM via memory modification or to compromise the management interface with CSS and SQL injection."}
+				]},
+				{
+				"name": "TG3.5 Legal", "description": "This group provides for threats resulting from violations of laws and/or regulations, such as the inappropriate use of Intellectual Property Rights and the misuse of personal data.",
+				"children": [
+					{"name": "T3.5.1 Violation of laws or regulations", "description": "It referes to the occurrence of a breach of EU and national laws."}
+				]},
+				{
+				"name": "TG3.6 Organisational threats", "description": "This group includes threats to the organizational sphere.",
+				"children": [
+					{"name": "T3.6.1 Skill shortage", "description": "A possible shortage of skilled system administrators and managers is one of the main threats to complex systems."},
+					{"name": "T3.6.2 Malicious insider", "description": "Insiders operate within a company’s security circle of trust, where they have direct access to resources."}
+				]}]
+	},
+	{
+		"name": "Data-Centric Security", "description": "The ability of sharing, managing, distributing, and accessing data quickly and remotely are at the basis of the digital revolution.",
+		"children": [
+				{
+				"name": "TG4.1 Unintentional damage/loss of information or IT assets", "description": "This group includes all threats causing unintentional information leakage or sharing due to human errors.",
+				"children": [
+					{"name": "T4.1.1 Information leakage/sharing due to human errors", "description": "Accidental threats caused due to misconfiguration, clerical errors, misapplication of valid rules, and knowledge-based mistakes."},
+					{"name": "T4.1.2 Inadequate design and planning or incorrect adaptation", "description": "Inadequate design and deployment, including its adaptation, of a Big Data platform, can result in threats to managed data."}
+				]},
+				{
+				"name": "TG4.2 Interception and unauthorised acquisition",  "description": "This group includes threats introduced by alteration/manipulation of the communications between two parties.",
+				"children": [
+					{"name": "T4.2.1 Interception of information", "description": "It considers an attacker intercepting communication between two communicating links."},
+					{"name": "T4.2.2 Unauthorized acquisition of information (data breach)", "description": "Unauthorized acquisition of data following data breachesconsiders incidents resulting in a compromise or loss of data."}
+				]},
+				{
+				"name": "TG4.3 Poisoning", "description": "This group includes all threats due to data/model poisoning and aiming to picture a scenario that not adhere to reality.",
+				"children": [
+					{"name": "T4.3.1 Data poisoning", "description": "Data poisoning is a fundamental threat to all systems building their processes and activities on data."},
+					{"name": "TG4.3.2 Model poisoning", "description": "It aims to poison the machine learning models, by poisoning data (Threat T4.3.1) used for the training of the model."}
+				]},
+				{
+				"name": "TG4.4 Nefarious activity/abuse", "description": "It requires active attacks targeting the infrastructure of the victim, including the installation or use of malicious tools and software.",
+				"children": [
+					{"name": "T4.4.1 Identity fraud", "description": "Personal and profiling data are often used for impersonation fraud, creating big opportunities for identity thieves."},
+					{"name": "T4.4.2 Denial of service", "description": "It can exhaust big data platform's resources, causing performance decrease, loss of data, service outages, and data availability issues."},
+					{"name": "T4.4.3 Malicious code/software/activity", "description": "These threats involve malware, exploit kits, worms, trojans, and exploit backdoors and trapdoors and developer errors."},
+					{"name": "T4.4.4 Generation and use of rogue certificatesy", "description": "They aim to use rouge certificates to access Big Data assets and communication links, causing data leakage, data breaches, misuse of the brand, etc."},
+					{"name": "T4.4.5 Misuse of assurance tools", "description": "The manipulation of assurance tools can result in scenarios where the malicious behavior of attackers is masqueraded."},
+					{"name": "T4.4.6 Failures of the business process", "description": "This class includes threats to confidentiality and integrity of data."},
+					{"name": "T4.4.7 Code execution and injection (unsecured APIs)", "description": "Code execution and injection are critical classes of attacks that can increase risks of greater data breaches."}
+				]},
+				{
+				"name": "TG4.5 Legal", "description": "This group provides for threats resulting from violations of laws and/or regulations, such as the inappropriate use of Intellectual Property Rights and the misuse of personal data.",
+				"children": [
+					{"name": "T4.5.1 Violation of laws or regulations", "description": "The management of legal aspects is pertinent to the Big Data system and can be considered as a threat to the system itself."}
+				]},
+				{
+				"name": "TG4.6 Organisational threats", "description": "This group includes threats to the organizational sphere.",
+				"children": [
+					{"name": "T4.6.1 Skill shortage", "description": "A possible shortage of skilled data scientists and managers is one of the main threats to Big Data."},
+					{"name": "T4.6.2 Malicious insider", "description": "Insiders are authorized users with legitimate access to sensitive/confidential documents, possibly knowing existing vulnerabilities."}
+				]}]
+	},
+	{
+		"name": "Application-Centric Security", "description": "Application is denoted as a program or group of programs designed for end-users.",
+		"children": [
+				{
+				"name": "TG5.1 Unintentional damage", "description": "This group includes all threats causing application malfunctioning or loss of confidentiality/integrity/availability due to human errors.", 
+				"children": [
+					{"name": "T5.1.1 Security misconfiguration", "description": "The problem can target systems at any layer and give attacker the possibility to compromise the system and bypass access control checks."}
+				]},
+				{
+				"name": "TG5.2 Interception and unauthorised acquisition", "description": "This group includes threats introduced by alteration/manipulation of the communications between two parties.",
+				"children": [
+					{"name": "T5.2.1 Interception of information", "description": "The interception of information is mainly due to weaknesses and flaws in the protocols for communication encryption."},
+					{"name": "T5.2.2 Sensitive data exposure", "description": "The most common weaknesses concern is storing/exchange of sensitive data in plain text, as well as how crypto is employed."}
+				]},
+				{
+				"name": "TG5.3 Nefarious activity/abuse", "description": "It requires active attacks targeting the platform of the victim, as well as public interfaces of the hosting platform and applications.",
+				"children": [
+					{"name": "T5.3.1 Broken authentication and access control", "description": "Broken authentication and access control allow an attacker to compromise an application and the entire system hosting it."},
+					{"name": "T5.3.2 Denial of service", "description": "One of the main targets of DoS are applications for a variety of reasons, including economic, political, ideological, etc."},
+					{"name": "T5.3.3 Code execution and injection (unsecured APIs)", "description": "Unsecure APIs are supporting criminals in their malicious activities."},
+					{"name": "T5.3.4 MInsufficient logging and monitoring", "description": "It reduces the intrusion detection and attack identification performance, decreasing the response and remediation effectiveness."},
+					{"name": "T5.3.5 Untrusted compositiony", "description": "Composite services orchestrate atomic services to provide advanced functionalities, introducing additional risks."}
+				]},
+				{ 
+				"name": "TG5.4 Legal", "description": "This group provides for threats resulting from violations of laws and/or regulations, such as the inappropriate use of Intellectual Property Rights and the misuse of personal data.",
+				"children": [
+					{"name": "T5.4.1 Violation of laws or regulations", "description": " The most relevant laws include the GDPR and the Regulation on Electronic Identification and Trust Services for Electronic Transactions in the Internal Market."}
+				]},
+				{
+				"name": "TG5.5 Organisational threats", "description": "This group includes threats to the organizational sphere.",
+				"children": [
+					{"name": "T5.5.1 Malicious insider", "description": " Insiders are authorized users with legitimate access to sensitive/confidential documents, possibly knowing existing vulnerabilities."}
+				]}]
+	},
+	{
+		"name": "User-Centric Security", "description": "The term users refers to human users of information technologies in a professional context.",
+		"children": [
+				{
+				"name": "TG6.1 Human errors", "description": "This group includes all threats causing unintentional information leakage or sharing due to human errors.",
+				"children": [
+					{"name": "T6.1.1 Mishandling of physical assets", "description": "Usually this event has moderate effects, if any, but in few circumstances it can cause severe consequences."},
+					{"name": "T6.1.2 Misconfiguration of systems", "description": "All types of systems are systematically misconfigured, often resulting in small failures."},
+					{"name": "T6.1.3 Loss of CIA on data assets", "description": "Access privileges are often misused, credentials are managed improperly, and trust is given to wrong person."},
+					{"name": "T6.1.4 The legal, reputational, and financial cost", "description": "A security incident may have effects that go well beyond the technical domain and production processes."}
+				]},
+				{
+				"name": "TG6.2  Privacy breaches", "description": "This group includes all threats causing privacy breaches.",
+				"children": [
+					{"name": "T6.2.1 Profiling and discriminatory practices", "description": "In Europe, GDPR has introduced severe limitations and fines for commercial profiling, which have not stopped the practice of web profiling for advertising purposes."},
+					{"name": "T6.2.2 Illegal acquisition of information", "description": "Illegal acquisition of data may happen as a consequence of hacking, of malware exfiltrating information, or of data breaches."}
+				]},
+				{
+				"name": "TG6.3  Cybercrimee", "description": "This group includes all threats due to data/model poisoning and aiming to picture a scenario that not adhere to reality.",
+				"children": [
+					{"name": "T6.3.1 Organized criminal groups activity", "description": "The use of malware, botnet, ransomware, and hacking is often related to criminal organizations, which are moving online for their illegal activity."},
+					{"name": "T6.3.2 State-sponsored organizations activity", "description": "The diffusion of online services and networked systems has enormously increased the possibilities for those willing to access proprietary data."},
+					{"name": "T6.3.3 Malicious employees or partners activity", "description": "Inside attackers are likely to exploit better information and higher privileges, increasing the odds of severe consequences."}
+				]},
+				{
+				"name": "TG6.4 Media amplification effects", "description": "This group includes threats coming from nefarious activities.",
+				"children": [
+					{"name": "T6.4.1 Misinformation/disinformation campaigns", "description": "It considers the relevance that media have in spreading information and amplifying the effect of news in the public opinion."},
+					{"name": "T6.4.2 Smearing campaigns/market manipulation", "description": "It relates to the possibility that a smear campaign is directed towards a company with the aim of manipulating the market."},
+					{"name": "T6.4.3 Social responsibility/ethics-related incidents", "description": "This represents a new threat for organizations, which might be attacked by crafting an incident based on ethical problems."}
+				]},
+				{
+				"name": "TG6.5 Organisational threats", "description": "This group includes threats to the organizational sphere.",
+				"children": [
+					{"name": "T6.5.1 Skill shortage/undefined cybersecurity curricula", "description": "Skill shortage in cybersecurity is a problem regularly which regards the majority of organizations."},
+					{"name": "T6.5.1 Business misalignment/shift of priorities", "description": "This represents the typical domain of eGovernment, where the aim is to  keep a constant alignment between IT and business goals and between IT processes and the corporate strategy."}
+				]}
+		]	
+	}
+  ]
+}
